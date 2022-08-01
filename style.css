@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to right,rgb(196, 201, 201),rgb(140, 114, 170));
+}
+.container{
+   height: 100vh;
+    width: 500px;
+    margin: auto;
+    overflow: auto;
+}
+
+.clip{
+    width: 57px;
+    height: 35px;
+    border: 7px solid rgb(22, 22, 22);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-650%);
+    box-shadow: 0 0 5px black inset;
+}
+
+.pin{
+    height: 50px;
+    width:7px;
+    background: rgb(24, 23, 23);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-60%,-52%);
+    box-shadow: 0 0 5px black;
+}
+
+.belt1{
+    height: 230px;
+    width: 67px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-120%);
+    background: linear-gradient(rgb(0, 0, 0),rgb(48, 48, 48));
+    box-shadow: 0 0 10px rgb(27, 27, 27);
+
+}
+.belt2{
+    height: 270px;
+    width: 67px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,20%);
+    background: linear-gradient(rgb(0, 0, 0),rgb(48, 48, 48));
+    box-shadow: 0 0 10px rgb(27, 27, 27);
+}
+.hole
+{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    top:4rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    box-shadow: 0 0 6px black inset;
+}
+
+
+.outer-body{
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.inner-body{
+    height: 120px;
+    width:120px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.glass{
+    height: 120px;
+    width:120px;
+    border-radius: 50%;
+    background: linear-gradient(100deg,rgba(255, 255, 255, 0.219),rgba(0, 0, 0, 0.089));
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    backdrop-filter: blur(0.6px);
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#hour{
+    color:rgb(228, 18, 18);
+    font-size:2.5rem;
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    transform: translate(-40%,-40%);
+    font-weight: bold;
+    font-family: verdana;
+}
+#minute{
+    color:rgb(255, 255, 255);
+    font-size:2rem;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-40%,-40%);
+    font-weight: bold;
+    font-family: verdana;
+}
+
+#seconds{
+    font-family: verdana;
+    color:white;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 63%;
+    left: 71%;
+    transform: translate(-10%,-40%);
+    font-weight: bold;
+}
+

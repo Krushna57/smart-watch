@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel="stylesheet" href="style.css">
+    <title>watch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="clip">
+            <div class="pin"></div>
+        </div>
+        <div class="belt1"></div>
+        <div class="outer-body">
+            <div class="inner-body">
+               <div class="content">
+                <label id="hour"></label> 
+                <label id="minute"></label> 
+                <label id="seconds"></label> 
+               </div>
+            </div>
+            <div class="glass"></div>
+        </div>
+        <div class="belt2">
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    setInterval(updateTime,1000);
+    function updateTime()
+    {
+        var today = new Date();
+       document.getElementById('hour').innerHTML=today.getHours();
+       document.getElementById('minute').innerHTML=today.getMinutes();
+       document.getElementById('seconds').innerHTML=today.getSeconds();
+    }
+</script>
